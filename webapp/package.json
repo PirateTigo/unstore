@@ -1,5 +1,5 @@
 {
-  "name": "webapp",
+  "name": "@unstore/webapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,14 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "types": "tsc --noEmit --project ./tsconfig.node.json && tsc --noEmit --project ./tsconfig.app.json",
     "prettify": "prettier --log-level warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
   },
   "dependencies": {
+    "@unstore/backend": "workspace:*",
+    "@tanstack/react-query": "^4.18.0",
+    "@trpc/client": "^10.45.2",
+    "@trpc/react-query": "^10.45.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
