@@ -1,12 +1,9 @@
-import { FC } from "react"
+import { FC } from 'react'
 
-import { TrpcProvider } from "@share/component"
+import { TrpcProvider } from '@share/component'
 
 export const App: FC = () => {
-  return (
-    <TrpcProvider>
-    </TrpcProvider>
-  )
+  return <TrpcProvider></TrpcProvider>
 }
 
 export default App

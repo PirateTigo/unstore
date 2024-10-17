@@ -1,5 +1,17 @@
 {
   "name": "unstore",
   "private": true,
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "scripts": {
+    "b": "pnpm --filter @unstore/backend",
+    "w": "pnpm --filter @unstore/webapp",
+    "dev": "pnpm -r --parallel dev",
+    "types": "concurrently 'pnpm b types' 'pnpm w types'",
+    "prettify": "pnpm -r --parallel prettify"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3"
+  }
 }

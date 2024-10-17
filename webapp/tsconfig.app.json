@@ -22,7 +22,7 @@
 
     "paths": {
       "@share/*": ["./src/share/*"],
-      "@backend/*": ["../backend/src/*"],
+      "@backend/*": ["../backend/src/*"]
     },
     "tsBuildInfoFile": "./node_modules/.cache/.node.tsbuildinfo"
   },
