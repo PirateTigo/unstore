@@ -7,9 +7,9 @@
     "w": "pnpm --filter @unstore/webapp",
     "dev": "pnpm -r --parallel dev",
     "lint": "concurrently 'pnpm b lint' 'pnpm w lint'",
+    "prepare": "husky",
     "prettify": "pnpm -r --parallel prettify",
-    "types": "concurrently 'pnpm b types' 'pnpm w types'",
-    "prepare": "husky"
+    "types": "concurrently 'pnpm b types' 'pnpm w types'"
   },
   "devDependencies": {
     "concurrently": "^9.0.1",
