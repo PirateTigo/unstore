@@ -17,7 +17,8 @@
     "@trpc/react-query": "^10.45.2",
     "@unstore/backend": "workspace:*",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.10",
