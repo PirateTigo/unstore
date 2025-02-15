@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 . "$(dirname "$0")/_/husky.sh"
 . "$NVM_DIR/nvm.sh"
-nvm use
+nvm use --silent
 
 pnpm lint-staged
 pnpm w stylecheck
