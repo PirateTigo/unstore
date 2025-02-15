@@ -7,7 +7,7 @@
     "w": "pnpm --filter @unstore/webapp",
     "dev": "pnpm -r --parallel dev",
     "lint": "concurrently 'pnpm b lint' 'pnpm w lint'",
-    "prepare": "husky",
+    "prepare": "husky install",
     "prettify": "pnpm -r --parallel prettify",
     "types": "concurrently 'pnpm b types' 'pnpm w types'"
   },

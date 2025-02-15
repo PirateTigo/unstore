@@ -5,7 +5,7 @@
 nvm use
 ```
 
-2. Добавьте в файл ~/.config/husky/init.sh следующие настройки:
+2. Добавьте в файл ~/.huskyrc следующие настройки:
 ```
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
