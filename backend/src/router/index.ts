@@ -1,6 +1,4 @@
-import { initTRPC } from '@trpc/server'
-
-const trpc = initTRPC.create()
+import { trpc } from '../lib/trpc'
 
 export const trpcRouter = trpc.router({})
 

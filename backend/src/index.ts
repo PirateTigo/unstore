@@ -1,8 +1,8 @@
-import * as trpcExpress from '@trpc/server/adapters/express'
 import cors from 'cors'
 import express from 'express'
 
-import { trpcRouter } from './trpc'
+import { applyTrpcToApp } from './lib/trpc'
+import { trpcRouter } from './router'
 
 const PORT = 3000
 
@@ -14,12 +14,7 @@ unstoreApp.get('/ping', (req, res) => {
   res.send('pong')
 })
 
-unstoreApp.use(
-  '/trpc',
-  trpcExpress.createExpressMiddleware({
-    router: trpcRouter,
-  }),
-)
+applyTrpcToApp(unstoreApp, trpcRouter)
 
 unstoreApp.listen(PORT, () => {
   console.info(`Listening at http://localhost:${PORT}`)

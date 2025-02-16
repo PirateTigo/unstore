@@ -1,5 +1,5 @@
-@import './vars';
-@import '../../node_modules/include-media/dist/include-media';
+@use './vars' as *;
+@use '../../node_modules/include-media/dist/include-media' as *;
 
 @mixin link($color: $blue, $hoverColor: $red) {
   color: $color;
