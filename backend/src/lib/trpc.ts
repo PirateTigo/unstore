@@ -4,7 +4,10 @@ import { type Express } from 'express'
 
 import { type TrpcRouter } from '../router'
 
-export const trpc = initTRPC.create()
+export const trpc = await (async () =>
+  initTRPC.create({
+    transformer: (await import('superjson')).SuperJSON,
+  }))()
 
 export const applyTrpcToApp = (app: Express, trpcRouter: TrpcRouter) => {
   app.use(

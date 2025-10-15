@@ -18,12 +18,14 @@
     "@trpc/client": "^10.45.2",
     "@trpc/react-query": "^10.45.2",
     "@unstore/backend": "workspace:*",
+    "date-fns": "^4.1.0",
     "include-media": "^2.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
     "reset-css": "^5.0.2",
-    "sass": "^1.80.6"
+    "sass": "^1.80.6",
+    "superjson": "^2.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.3.10",

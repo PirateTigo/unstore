@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "build": "concurrently 'pnpm b build' 'pnpm w build'",
     "b": "pnpm --filter @unstore/backend",
     "w": "pnpm --filter @unstore/webapp",
     "dev": "pnpm -r --parallel dev",
