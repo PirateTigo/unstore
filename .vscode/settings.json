@@ -8,5 +8,5 @@
   "stylelint.validate": ["css", "scss", "postcss"],
   "stylelint.packageManager": "pnpm",
   "stylelint.configFile": "webapp/.stylelintrc.yml",
-  "typescript.tsserver.nodePath": "/Users/a.tarakanovskii/.nvm/versions/node/v20.18.0"
+  "typescript.tsserver.nodePath": "$NVM_DIR/versions/node/v20.18.0"
 }
