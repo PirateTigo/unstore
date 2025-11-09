@@ -5,8 +5,8 @@ export const zSignUpTrpcInput = z.object({
     .string()
     .min(3)
     .regex(
-      /^[a-zA-Z0-9-]$/,
-      'Nick may contains only letters, numbers and dashes',
+      /^[A-Za-z0-9-]+$/,
+      'Login may contains only letters, numbers and dashes',
     ),
   password: z.string().min(1),
 })

@@ -22,7 +22,8 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "superjson": "^2.2.2",
-    "zod": "^4.1.12"
+    "trpc-playground": "^1.0.4",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",

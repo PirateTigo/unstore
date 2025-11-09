@@ -3,7 +3,7 @@ import express from 'express'
 
 import { type AppContext, createAppContext } from './lib/ctx'
 import { applyTrpcToApp } from './lib/trpc'
-import { trpcRouter } from './router'
+import { loadTrpcRouter } from './router'
 
 const PORT = 3000
 
@@ -20,7 +20,8 @@ void (async () => {
       res.send('pong')
     })
 
-    applyTrpcToApp(unstoreApp, ctx, trpcRouter)
+    const trpcRouter = await loadTrpcRouter()
+    await applyTrpcToApp(unstoreApp, ctx, trpcRouter)
 
     unstoreApp.listen(PORT, () => {
       console.info(`Listening at http://localhost:${PORT}`)

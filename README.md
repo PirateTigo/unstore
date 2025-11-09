@@ -26,7 +26,7 @@ create database <dbname>;
 create user <user> with encrypted password '<password>';
 
 # Выдайте пользователю права к БД
-grant all privileges on database <user> to <dbname>;
+grant all privileges on database <dbname> to <user>;
 
 # Разрешите пользователю создавать БД
 alter user <user> createdb;
